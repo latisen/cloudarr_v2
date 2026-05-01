@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.local
-    container_name: decypharr
+    container_name: cloudarr
     ports:
       - "8282:8282"
     volumes:
