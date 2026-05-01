@@ -34,7 +34,7 @@ services:
       - /mnt/config/sonarr:/config
       - /mnt/media/tv:/tv
       - /mnt/downloads:/downloads
-      - /mnt/debrid:/mnt/debrid
+      - /mnt/debrid:/mnt/debrid:rshared
     environment:
       - PUID=1000
       - PGID=1000
@@ -50,7 +50,7 @@ services:
       - /mnt/config/radarr:/config
       - /mnt/media/movies:/movies
       - /mnt/downloads:/downloads
-      - /mnt/debrid:/mnt/debrid
+      - /mnt/debrid:/mnt/debrid:rshared
     environment:
       - PUID=1000
       - PGID=1000
