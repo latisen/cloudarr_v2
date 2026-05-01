@@ -9,15 +9,9 @@ services:
     ports:
       - "8282:8282"
     volumes:
-      - /mnt/debrid:/mnt/debrid:rshared
+      - /mnt/debrid:/mnt/debrid:ro
       - /mnt/downloads:/mnt/downloads
       - /mnt/config/decypharr:/app
-    devices:
-      - /dev/fuse:/dev/fuse:rwm
-    cap_add:
-      - SYS_ADMIN
-    security_opt:
-      - apparmor:unconfined
     environment:
       - PUID=1000
       - PGID=1000
@@ -34,7 +28,7 @@ services:
       - /mnt/config/sonarr:/config
       - /mnt/media/tv:/tv
       - /mnt/downloads:/downloads
-      - /mnt/debrid:/mnt/debrid:rshared
+      - /mnt/debrid:/mnt/debrid:ro
     environment:
       - PUID=1000
       - PGID=1000
@@ -50,7 +44,7 @@ services:
       - /mnt/config/radarr:/config
       - /mnt/media/movies:/movies
       - /mnt/downloads:/downloads
-      - /mnt/debrid:/mnt/debrid:rshared
+      - /mnt/debrid:/mnt/debrid:ro
     environment:
       - PUID=1000
       - PGID=1000
@@ -78,6 +72,8 @@ services:
       - /mnt/config/plex:/config
       - /mnt/media/tv:/tv
       - /mnt/media/movies:/movies
+      - /mnt/downloads:/downloads
+      - /mnt/debrid:/mnt/debrid:ro
     environment:
       - PUID=1000
       - PGID=1000
