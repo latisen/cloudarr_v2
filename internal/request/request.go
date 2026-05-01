@@ -14,7 +14,7 @@ import (
 
 	"github.com/hashicorp/go-retryablehttp"
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/logger"
+	"github.com/latisen/cloudarr_v2/internal/logger"
 	"go.uber.org/ratelimit"
 	"golang.org/x/net/proxy"
 )

@@ -1,7 +1,7 @@
 package reader
 
 import (
-	"github.com/sirrobot01/decypharr/pkg/usenet/types"
+	"github.com/latisen/cloudarr_v2/pkg/usenet/types"
 )
 
 

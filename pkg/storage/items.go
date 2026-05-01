@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"github.com/sirrobot01/decypharr/pkg/storage/hybrid"
+	"github.com/latisen/cloudarr_v2/pkg/storage/hybrid"
 	"google.golang.org/protobuf/proto"
 )
 

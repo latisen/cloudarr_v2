@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/sirrobot01/decypharr/internal/customerror"
-	"github.com/sirrobot01/decypharr/pkg/manager"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/customerror"
+	"github.com/latisen/cloudarr_v2/pkg/manager"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 func getDownloadByteRange(info *manager.FileInfo) *[2]int64 {

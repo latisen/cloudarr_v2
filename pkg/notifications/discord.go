@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sirrobot01/decypharr/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/config"
 )
 
 // DiscordEmbed represents a Discord embed object

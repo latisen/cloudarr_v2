@@ -12,9 +12,9 @@ import (
 
 	"github.com/Tensai75/nzbparser"
 	"github.com/google/uuid"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	"github.com/sirrobot01/decypharr/pkg/storage"
-	"github.com/sirrobot01/decypharr/pkg/usenet/types"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
+	"github.com/latisen/cloudarr_v2/pkg/usenet/types"
 )
 
 // getRARVolumeOrder returns a sort key for RAR volume ordering.

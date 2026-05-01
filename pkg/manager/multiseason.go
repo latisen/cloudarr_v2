@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	debridTypes "github.com/sirrobot01/decypharr/pkg/debrid/types"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	debridTypes "github.com/latisen/cloudarr_v2/pkg/debrid/types"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 // Multi-season detection patterns

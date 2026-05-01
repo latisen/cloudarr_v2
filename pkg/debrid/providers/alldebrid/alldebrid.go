@@ -13,12 +13,12 @@ import (
 	json "github.com/bytedance/sonic"
 
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/logger"
-	"github.com/sirrobot01/decypharr/internal/request"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	"github.com/sirrobot01/decypharr/pkg/debrid/account"
-	"github.com/sirrobot01/decypharr/pkg/debrid/types"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/logger"
+	"github.com/latisen/cloudarr_v2/internal/request"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	"github.com/latisen/cloudarr_v2/pkg/debrid/account"
+	"github.com/latisen/cloudarr_v2/pkg/debrid/types"
 	"go.uber.org/ratelimit"
 )
 

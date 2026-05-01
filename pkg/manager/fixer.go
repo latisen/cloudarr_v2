@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/puzpuzpuz/xsync/v4"
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	"github.com/sirrobot01/decypharr/pkg/debrid/types"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	"github.com/latisen/cloudarr_v2/pkg/debrid/types"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 // Fixer handles torrent repair with cascading re-insertion across debrids

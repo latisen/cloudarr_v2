@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/sirrobot01/decypharr/pkg/storage"
-	"github.com/sirrobot01/decypharr/pkg/usenet/types"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
+	"github.com/latisen/cloudarr_v2/pkg/usenet/types"
 )
 
 // ValidateNZB performs basic validation on NZB content

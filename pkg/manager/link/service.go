@@ -9,11 +9,11 @@ import (
 
 	"github.com/puzpuzpuz/xsync/v4"
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/customerror"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	debrid "github.com/sirrobot01/decypharr/pkg/debrid/common"
-	"github.com/sirrobot01/decypharr/pkg/debrid/types"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/customerror"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	debrid "github.com/latisen/cloudarr_v2/pkg/debrid/common"
+	"github.com/latisen/cloudarr_v2/pkg/debrid/types"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 	"golang.org/x/sync/singleflight"
 )
 

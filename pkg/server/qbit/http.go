@@ -5,10 +5,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	"github.com/sirrobot01/decypharr/pkg/arr"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	"github.com/latisen/cloudarr_v2/pkg/arr"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 func (q *QBit) handleLogin(w http.ResponseWriter, r *http.Request) {

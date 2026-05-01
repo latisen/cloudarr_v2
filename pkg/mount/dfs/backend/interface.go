@@ -7,8 +7,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/sirrobot01/decypharr/pkg/mount/dfs/config"
-	"github.com/sirrobot01/decypharr/pkg/mount/dfs/vfs"
+	"github.com/latisen/cloudarr_v2/pkg/mount/dfs/config"
+	"github.com/latisen/cloudarr_v2/pkg/mount/dfs/vfs"
 )
 
 // Type represents the type of FUSE backend

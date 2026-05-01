@@ -9,9 +9,9 @@ import (
 
 
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/nntp"
-	"github.com/sirrobot01/decypharr/pkg/usenet/parser"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/nntp"
+	"github.com/latisen/cloudarr_v2/pkg/usenet/parser"
 
 )
 

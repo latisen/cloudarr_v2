@@ -13,11 +13,11 @@ import (
 	"strings"
 
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/nntp"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	"github.com/sirrobot01/decypharr/pkg/storage"
-	"github.com/sirrobot01/decypharr/pkg/usenet/fs"
-	"github.com/sirrobot01/decypharr/pkg/usenet/types"
+	"github.com/latisen/cloudarr_v2/internal/nntp"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
+	"github.com/latisen/cloudarr_v2/pkg/usenet/fs"
+	"github.com/latisen/cloudarr_v2/pkg/usenet/types"
 )
 
 // ZIP format constants

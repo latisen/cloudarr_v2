@@ -11,10 +11,10 @@ import (
 
 	"github.com/Tensai75/nzbparser"
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/nntp"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/nntp"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 	"github.com/sourcegraph/conc/iter"
 )
 

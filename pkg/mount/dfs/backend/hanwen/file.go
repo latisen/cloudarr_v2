@@ -13,10 +13,10 @@ import (
 	"github.com/hanwen/go-fuse/v2/fs"
 	"github.com/hanwen/go-fuse/v2/fuse"
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/logger"
-	"github.com/sirrobot01/decypharr/pkg/manager"
-	"github.com/sirrobot01/decypharr/pkg/mount/dfs/config"
-	"github.com/sirrobot01/decypharr/pkg/mount/dfs/vfs"
+	"github.com/latisen/cloudarr_v2/internal/logger"
+	"github.com/latisen/cloudarr_v2/pkg/manager"
+	"github.com/latisen/cloudarr_v2/pkg/mount/dfs/config"
+	"github.com/latisen/cloudarr_v2/pkg/mount/dfs/vfs"
 )
 
 // File implements a FUSE file with RFS streaming

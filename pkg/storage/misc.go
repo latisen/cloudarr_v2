@@ -1,6 +1,6 @@
 package storage
 
-import "github.com/sirrobot01/decypharr/internal/config"
+import "github.com/latisen/cloudarr_v2/internal/config"
 
 // HandleExistingEntryMerge merges an incoming entry with an existing one that
 // shares the same infohash. This preserves placements, files, and tags from

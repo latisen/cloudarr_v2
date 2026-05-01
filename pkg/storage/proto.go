@@ -3,9 +3,9 @@ package storage
 import (
 	"time"
 
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/pkg/arr"
-	debridTypes "github.com/sirrobot01/decypharr/pkg/debrid/types"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/pkg/arr"
+	debridTypes "github.com/latisen/cloudarr_v2/pkg/debrid/types"
 )
 
 // ============================================================================

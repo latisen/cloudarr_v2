@@ -9,11 +9,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/customerror"
-	"github.com/sirrobot01/decypharr/pkg/manager"
-	fuseconfig "github.com/sirrobot01/decypharr/pkg/mount/dfs/config"
-	"github.com/sirrobot01/decypharr/pkg/mount/dfs/vfs/ranges"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/customerror"
+	"github.com/latisen/cloudarr_v2/pkg/manager"
+	fuseconfig "github.com/latisen/cloudarr_v2/pkg/mount/dfs/config"
+	"github.com/latisen/cloudarr_v2/pkg/mount/dfs/vfs/ranges"
 )
 
 const (

@@ -7,7 +7,7 @@ import (
 
 	json "github.com/bytedance/sonic"
 
-	"github.com/sirrobot01/decypharr/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/config"
 )
 
 func (s *Server) authMiddleware(next http.Handler) http.Handler {

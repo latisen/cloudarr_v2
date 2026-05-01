@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/retry"
-	"github.com/sirrobot01/decypharr/internal/utils"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/retry"
+	"github.com/latisen/cloudarr_v2/internal/utils"
 	"golang.org/x/net/context"
 )
 

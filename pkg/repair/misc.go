@@ -4,7 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/sirrobot01/decypharr/pkg/arr"
+	"github.com/latisen/cloudarr_v2/pkg/arr"
 )
 
 func fileIsSymlinked(file string) bool {

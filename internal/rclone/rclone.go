@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/request"
-	"github.com/sirrobot01/decypharr/internal/utils"
+	"github.com/latisen/cloudarr_v2/internal/request"
+	"github.com/latisen/cloudarr_v2/internal/utils"
 )
 
 type Client struct {

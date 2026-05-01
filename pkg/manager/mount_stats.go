@@ -1,7 +1,7 @@
 package manager
 
 import (
-	"github.com/sirrobot01/decypharr/internal/rclone"
+	"github.com/latisen/cloudarr_v2/internal/rclone"
 )
 
 // MountStats is the unified stats struct returned by all MountManager implementations.

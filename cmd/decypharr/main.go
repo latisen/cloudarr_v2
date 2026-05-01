@@ -9,16 +9,16 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/logger"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	"github.com/sirrobot01/decypharr/pkg/manager"
-	"github.com/sirrobot01/decypharr/pkg/mount/dfs"
-	"github.com/sirrobot01/decypharr/pkg/mount/external"
-	"github.com/sirrobot01/decypharr/pkg/mount/rclone"
-	"github.com/sirrobot01/decypharr/pkg/repair"
-	"github.com/sirrobot01/decypharr/pkg/server"
-	"github.com/sirrobot01/decypharr/pkg/version"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/logger"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	"github.com/latisen/cloudarr_v2/pkg/manager"
+	"github.com/latisen/cloudarr_v2/pkg/mount/dfs"
+	"github.com/latisen/cloudarr_v2/pkg/mount/external"
+	"github.com/latisen/cloudarr_v2/pkg/mount/rclone"
+	"github.com/latisen/cloudarr_v2/pkg/repair"
+	"github.com/latisen/cloudarr_v2/pkg/server"
+	"github.com/latisen/cloudarr_v2/pkg/version"
 )
 
 func Start(ctx context.Context) error {

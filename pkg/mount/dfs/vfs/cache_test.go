@@ -8,7 +8,7 @@ import (
 
 	"github.com/puzpuzpuz/xsync/v4"
 	"github.com/rs/zerolog"
-	fuseconfig "github.com/sirrobot01/decypharr/pkg/mount/dfs/config"
+	fuseconfig "github.com/latisen/cloudarr_v2/pkg/mount/dfs/config"
 )
 
 func newTestCache(cacheDir string) *Cache {

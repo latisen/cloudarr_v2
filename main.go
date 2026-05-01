@@ -12,9 +12,9 @@ import (
 	"runtime/debug"
 	"syscall"
 
-	"github.com/sirrobot01/decypharr/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/config"
 
-	"github.com/sirrobot01/decypharr/cmd/decypharr"
+	"github.com/latisen/cloudarr_v2/cmd/decypharr"
 )
 
 func main() {

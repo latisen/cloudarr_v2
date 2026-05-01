@@ -3,8 +3,8 @@ package manager
 import (
 	"context"
 
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 func (m *Manager) fixNZBFileSizes(ctx context.Context) {

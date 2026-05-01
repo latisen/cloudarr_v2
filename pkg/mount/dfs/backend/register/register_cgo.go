@@ -1,3 +1,3 @@
 package register
 
-import _ "github.com/sirrobot01/decypharr/pkg/mount/dfs/backend/cgofuse"
+import _ "github.com/latisen/cloudarr_v2/pkg/mount/dfs/backend/cgofuse"

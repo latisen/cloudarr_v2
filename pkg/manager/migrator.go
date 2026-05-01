@@ -11,10 +11,10 @@ import (
 	"time"
 
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/logger"
-	debridTypes "github.com/sirrobot01/decypharr/pkg/debrid/types"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/logger"
+	debridTypes "github.com/latisen/cloudarr_v2/pkg/debrid/types"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 // Migrator handles migration from cache JSON files to unified bbolt system

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sirrobot01/decypharr/pkg/mount/dfs/vfs/ranges"
+	"github.com/latisen/cloudarr_v2/pkg/mount/dfs/vfs/ranges"
 )
 
 const (

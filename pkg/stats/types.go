@@ -1,8 +1,8 @@
 package stats
 
 import (
-	"github.com/sirrobot01/decypharr/pkg/debrid/types"
-	"github.com/sirrobot01/decypharr/pkg/manager"
+	"github.com/latisen/cloudarr_v2/pkg/debrid/types"
+	"github.com/latisen/cloudarr_v2/pkg/manager"
 )
 
 // Snapshot holds a point-in-time stats snapshot.

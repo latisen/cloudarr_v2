@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/rs/zerolog"
-	"github.com/sirrobot01/decypharr/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/config"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 

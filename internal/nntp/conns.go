@@ -15,8 +15,8 @@ import (
 	"time"
 
 	"github.com/rs/zerolog"
-	nntpyenc "github.com/sirrobot01/decypharr/internal/nntp/yenc"
-	"github.com/sirrobot01/decypharr/internal/utils"
+	nntpyenc "github.com/latisen/cloudarr_v2/internal/nntp/yenc"
+	"github.com/latisen/cloudarr_v2/internal/utils"
 )
 
 // Note: Timeout values are defined in TimeoutConfig (client.go)

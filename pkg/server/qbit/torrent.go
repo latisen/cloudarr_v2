@@ -7,11 +7,11 @@ import (
 	"mime/multipart"
 	"time"
 
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/internal/utils"
-	"github.com/sirrobot01/decypharr/pkg/arr"
-	"github.com/sirrobot01/decypharr/pkg/manager"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/internal/utils"
+	"github.com/latisen/cloudarr_v2/pkg/arr"
+	"github.com/latisen/cloudarr_v2/pkg/manager"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 // All torrent-related helpers goes here
@@ -61,8 +61,8 @@ func (q *QBit) RefreshTorrent(t *storage.Entry) bool {
 func (q *QBit) GetTorrentProperties(t *storage.Entry) *TorrentProperties {
 	return &TorrentProperties{
 		AdditionDate:       t.AddedOn.Unix(),
-		Comment:            "Provider Blackhole <https://github.com/sirrobot01/decypharr>",
-		CreatedBy:          "Provider Blackhole <https://github.com/sirrobot01/decypharr>",
+		Comment:            "Provider Blackhole <https://github.com/latisen/cloudarr_v2>",
+		CreatedBy:          "Provider Blackhole <https://github.com/latisen/cloudarr_v2>",
 		CreationDate:       t.AddedOn.Unix(),
 		DlLimit:            -1,
 		UpLimit:            -1,

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sirrobot01/decypharr/internal/testutil"
+	"github.com/latisen/cloudarr_v2/internal/testutil"
 )
 
 // checkMagnet is a helper function that verifies magnet properties

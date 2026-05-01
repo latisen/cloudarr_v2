@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sirrobot01/decypharr/pkg/manager"
+	"github.com/latisen/cloudarr_v2/pkg/manager"
 	"github.com/stanNthe5/stringbuf"
 )
 

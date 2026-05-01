@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/puzpuzpuz/xsync/v4"
-	"github.com/sirrobot01/decypharr/internal/request"
-	"github.com/sirrobot01/decypharr/pkg/debrid/types"
+	"github.com/latisen/cloudarr_v2/internal/request"
+	"github.com/latisen/cloudarr_v2/pkg/debrid/types"
 )
 
 type Account struct {

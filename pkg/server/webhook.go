@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	json "github.com/bytedance/sonic"
-	"github.com/sirrobot01/decypharr/pkg/manager"
+	"github.com/latisen/cloudarr_v2/pkg/manager"
 )
 
 func (s *Server) handleTautulli(w http.ResponseWriter, r *http.Request) {

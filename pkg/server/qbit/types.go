@@ -1,7 +1,7 @@
 package qbit
 
 import (
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 type BuildInfo struct {

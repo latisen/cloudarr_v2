@@ -1,8 +1,8 @@
 package notifications
 
 import (
-	"github.com/sirrobot01/decypharr/internal/config"
-	"github.com/sirrobot01/decypharr/pkg/storage"
+	"github.com/latisen/cloudarr_v2/internal/config"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 // Event represents a notification event to be dispatched
