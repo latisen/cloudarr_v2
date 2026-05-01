@@ -12,11 +12,9 @@ RUN go mod download
 
 COPY . .
 
-RUN CGO_ENABLED=1 go build -trimpath \
-  -ldflags="-w -s -X github.com/sirrobot01/decypharr/pkg/version.Version=${VERSION} -X github.com/sirrobot01/decypharr/pkg/version.Channel=${CHANNEL}" \
-  -o /decypharr
+RUN CGO_ENABLED=1 go build -trimpath -o /decypharr
 
-RUN CGO_ENABLED=0 go build -trimpath -ldflags="-w -s" \
+RUN CGO_ENABLED=0 go build -trimpath \
   -o /healthcheck cmd/healthcheck/main.go
 
 FROM alpine:latest
@@ -25,7 +23,7 @@ ARG VERSION=0.0.0
 ARG CHANNEL=dev
 
 LABEL version="${VERSION}-${CHANNEL}"
-LABEL org.opencontainers.image.source="https://github.com/sirrobot01/decypharr"
+LABEL org.opencontainers.image.source="https://github.com/latisen/cloudarr_v2"
 
 RUN apk add --no-cache fuse3 ca-certificates su-exec shadow curl unzip tzdata && \
   echo "user_allow_other" >> /etc/fuse.conf

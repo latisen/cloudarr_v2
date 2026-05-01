@@ -1,4 +1,4 @@
-module github.com/sirrobot01/decypharr
+module github.com/latisen/cloudarr_v2
 
 go 1.25.5
 
