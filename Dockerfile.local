@@ -5,18 +5,20 @@ ARG CHANNEL=dev
 
 WORKDIR /app
 
-RUN apk add --no-cache gcc musl-dev fuse-dev clang lld protobuf-dev
+RUN apk add --no-cache gcc musl-dev fuse-dev clang lld protobuf
 
 COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . .
 
-# Regenerate all protobuf files after module path update
-RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@latest && \
-    export PATH="$PATH:$(go env GOPATH)/bin" && \
-    protoc --go_out=. --go_opt=paths=source_relative pkg/storage/storage.proto && \
-    protoc --go_out=. --go_opt=paths=source_relative pkg/usenet/nzb.proto
+# Regenerate protobuf files deterministically to avoid stale/corrupted descriptors.
+RUN rm -f pkg/storage/storage.pb.go pkg/usenet/nzb.pb.go && \
+  go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.36.7 && \
+  export PATH="$PATH:$(go env GOPATH)/bin" && \
+  protoc --version && \
+  protoc --go_out=. --go_opt=paths=source_relative pkg/storage/storage.proto && \
+  protoc --go_out=. --go_opt=paths=source_relative pkg/usenet/nzb.proto
 
 RUN CGO_ENABLED=1 go build -trimpath -o /decypharr
 
