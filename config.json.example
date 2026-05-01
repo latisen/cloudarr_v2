@@ -1,44 +1,34 @@
 {
-  "server": {
-    "host": "0.0.0.0",
-    "port": 8282,
-    "base_url": "http://decypharr:8282"
-  },
-  "debrid": {
-    "real_debrid": {
+  "bind_address": "0.0.0.0",
+  "port": "8282",
+  "log_level": "info",
+
+  "debrids": [
+    {
+      "name": "realdebrid",
+      "provider": "realdebrid",
       "api_key": "REPLACE_WITH_YOUR_REAL_DEBRID_API_KEY"
     }
-  },
+  ],
+
   "mount": {
     "type": "rclone",
     "mount_path": "/mnt/debrid",
     "rclone": {
+      "enabled": true,
+      "port": "5572",
       "cache_dir": "/app/rclone-cache",
       "vfs_cache_mode": "full",
-      "vfs_cache_size": "5G",
-      "chunk_size": "10M",
-      "transfers": 4,
-      "checkers": 8
+      "vfs_cache_max_size": "5G",
+      "transfers": 4
     }
   },
+
   "download_folder": "/mnt/downloads",
-  "log_level": "info",
-  "log_path": "/app/logs",
-  "database": {
-    "path": "/app/decypharr.db"
-  },
-  "categories": [
-    {
-      "name": "sonarr",
-      "download_action": "symlink"
-    },
-    {
-      "name": "radarr",
-      "download_action": "symlink"
-    }
-  ],
+  "categories": ["sonarr", "radarr"],
   "default_download_action": "symlink",
-  "notification": {
+
+  "notifications": {
     "enabled": false
   }
 }
