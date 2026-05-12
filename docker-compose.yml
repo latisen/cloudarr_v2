@@ -72,7 +72,9 @@ services:
       - /mnt/config/plex:/config
       - /mnt/media/tv:/tv
       - /mnt/media/movies:/movies
+      - /mnt/media:/mnt/media:ro
       - /mnt/downloads:/downloads
+      - /mnt/downloads:/mnt/downloads:ro
       - /mnt/debrid:/mnt/debrid:ro
     environment:
       - PUID=1000
