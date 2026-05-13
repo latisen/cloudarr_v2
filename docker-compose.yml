@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   decypharr:
     build:
@@ -9,9 +7,14 @@ services:
     ports:
       - "8282:8282"
     volumes:
-      - /mnt/debrid:/mnt/debrid:ro
-      - /mnt/downloads:/mnt/downloads
+      - /mnt/:/mnt:rshared
       - /mnt/config/decypharr:/app
+    devices:
+      - /dev/fuse:/dev/fuse:rwm
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
     environment:
       - PUID=1000
       - PGID=1000
