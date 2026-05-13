@@ -169,7 +169,7 @@ func (q *Queue) DeleteWhere(category string, protocol config.Protocol, state sto
 	return q.storage.DeleteWhereQueued(q.ListFilterFunc(category, protocol, state, hashes), cleanup)
 }
 
-func (q *Queue) DeleteStalled() error {
+func (q *Queue) DeleteStalled(cleanup func(*storage.Entry) error) error {
 	cutoff := time.Now().Add(-q.removeStalledAfter)
 	return q.storage.DeleteWhereQueued(func(t *storage.Entry) bool {
 		if !t.AddedOn.Before(cutoff) {
@@ -184,7 +184,7 @@ func (q *Queue) DeleteStalled() error {
 			return true
 		}
 		return false
-	}, nil)
+	}, cleanup)
 }
 
 func (q *Queue) Update(torrent *storage.Entry) error {

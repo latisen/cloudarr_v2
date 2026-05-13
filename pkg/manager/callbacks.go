@@ -24,6 +24,12 @@ func (m *Manager) RemoveFromProvider(providerEntry *storage.ProviderEntry) error
 
 func (m *Manager) RemoveTorrentPlacements(t *storage.Entry) {
 	for _, placement := range t.Providers {
-		_ = m.RemoveFromProvider(placement)
+		if err := m.RemoveFromProvider(placement); err != nil {
+			m.logger.Warn().Err(err).
+				Str("provider", placement.Provider).
+				Str("id", placement.ID).
+				Str("info_hash", t.InfoHash).
+				Msg("Failed to remove stalled torrent from provider")
+		}
 	}
 }

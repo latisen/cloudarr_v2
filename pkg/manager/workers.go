@@ -7,6 +7,7 @@ import (
 	"github.com/latisen/cloudarr_v2/internal/config"
 	"github.com/latisen/cloudarr_v2/internal/utils"
 	debrid "github.com/latisen/cloudarr_v2/pkg/debrid/common"
+	"github.com/latisen/cloudarr_v2/pkg/storage"
 )
 
 // runInitialCalls performs any initial calls of worker functions
@@ -77,7 +78,10 @@ func (m *Manager) addQueueProcessorJob(ctx context.Context) error {
 		} else {
 			// Schedule the job
 			if _, err := m.scheduler.NewJob(jd, gocron.NewTask(func() {
-				err := m.queue.DeleteStalled()
+				err := m.queue.DeleteStalled(func(entry *storage.Entry) error {
+					m.RemoveTorrentPlacements(entry)
+					return nil
+				})
 				if err != nil {
 					m.logger.Error().Err(err).Msg("Failed to process remove stalled torrents")
 				}
