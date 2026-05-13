@@ -237,7 +237,7 @@ func (tb *Torbox) SubmitMagnet(torrent *types.Torrent) (*types.Torrent, error) {
 	}
 
 	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
-		return nil, fmt.Errorf("torbox API error: Status: %d", resp.StatusCode)
+		return nil, fmt.Errorf("torbox API error: Status: %d, Detail: %s, Error: %v", resp.StatusCode, data.Detail, data.Error)
 	}
 	if data.Data == nil {
 		return nil, fmt.Errorf("error adding torrent")
