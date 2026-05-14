@@ -429,9 +429,9 @@ func (tb *Torbox) CheckStatus(torrent *types.Torrent) (*types.Torrent, error) {
 }
 
 func (tb *Torbox) DeleteTorrent(torrentId string) error {
-	payload := map[string]string{"torrent_id": torrentId, "action": "Delete"}
+	formData := map[string]string{"torrent_id": torrentId, "action": "Delete"}
 
-	resp, err := tb.doDelete(fmt.Sprintf("/api/torrents/controltorrent/%s", torrentId), payload)
+	resp, err := tb.doPostForm("/api/torrents/controltorrent", formData, nil)
 	if err != nil {
 		return err
 	}
